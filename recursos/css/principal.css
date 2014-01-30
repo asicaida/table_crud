@@ -39,7 +39,7 @@ div#div_menu fieldset {
 
 div#div_menu fieldset legend {
 	
-	color: blue;
+	color: red;
 }
 
 ul#menu {
@@ -55,7 +55,7 @@ ul#menu li.item {
 	background-color: lightgreen;
 	padding: 5px;
 	margin: 0px 0px;
-	background-color: blue;
+	background-color: red;
 
 }
 
@@ -77,7 +77,7 @@ ul#menu li.item a:visited {
 }
 
 ul#menu li.item a:hover {
-	color: yellow;
+	color: blue;
 }
 
 ul#menu li.item a:active {
