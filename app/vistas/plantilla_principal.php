@@ -50,7 +50,7 @@
 			<?php if (isset($_GET["administrator"])): ?>
 				Administrator:
 			<?php endif; ?>
-			Aplicación con patrón MVC</h1>
+			Table_Crud   Dayana Asimbaya</h1>
 		</div>
 		
 		<div id="div_derecha_logo">
@@ -112,8 +112,8 @@
 		<div id="pie">
 			
 			Pie del documento.<br />
-			Documento creado por Jesús María de Quevedo Tomé. <a href="mailto:jequeto@gmail.com">Contactar</a><br />
-			Fecha última actualización: 15 de diciembre de 2013.
+			Documento creado por Dayana Asimbaya Caiza . <a href="mailto:dayana.sofia23@gmail.com">Contactar</a><br />
+			Fecha última actualización: 31 de enero de 2014.
 		</div>
 		
 		<?php echo \core\HTML_Tag::post_request_form(); ?>
