@@ -80,22 +80,10 @@
 					<ul id="menu" class="menu">
 <!--						<li class="item"><a href="<?php //echo \core\URL::generar(); ?>" title="Inicio">Inicio</a></li>-->
 						<?php echo \core\HTML_Tag::li_menu("item", array("inicio"), "Inicio"); ?>
-<!--						<li class="item"><a href="<?php //echo \core\URL::generar("revista"); ?>" title="Revista">Revista</a></li>-->
-						<?php echo \core\HTML_Tag::li_menu("item", array("revista"), "Revista"); ?>
-<!--						<li class="item"><a href="<?php //echo \core\URL::generar("libros"); ?>" title="Libros leídos">Libros</a></li>-->
-						<?php echo \core\HTML_Tag::li_menu("item", array("libros"), "Libros"); ?>
+<!--						<li class="item"><a href="<?php //echo \core\URL::generar("viajes"); ?>" title="Revista">Viajes</a></li>-->
+						<?php echo \core\HTML_Tag::li_menu("item", array("viajes"), "Viajes"); ?>
+
 						
-<!--						<li class="item"><a href="<?php //echo \core\URL::generar("inicio/internacional"); ?>" title="Internacional">Internacional</a></li>-->
-						<?php echo \core\HTML_Tag::li_menu("item", array("inicio", "internacional"), "Internacional"); ?>
-						
-						
-<!--						<li class="item"><a href="<?php //echo \core\URL::generar("usuarios"); ?>" title="Usuarios">Usuarios</a></li>-->
-						<?php echo \core\HTML_Tag::li_menu("item", array("usuarios"), "Usuarios"); ?>
-<!--						<li class="item"><a href="<?php //echo \core\URL::generar("categorias"); ?>" title="Categorías">Categorías</a></li>-->
-						<?php echo \core\HTML_Tag::li_menu("item", array("categorias"), "Categorias"); ?>
-						
-<!--						<li class="item"><a href="<?php //echo \core\URL::generar("articulos"); ?>" title="Artículos">Artículos</a></li>-->
-						<?php echo \core\HTML_Tag::li_menu("item", array("articulos"), "Artículos"); ?>
 					</ul>
 			</fieldset>
 		</div>

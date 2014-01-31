@@ -1,5 +1,49 @@
 <div>
-	<p>Bienvenido a la aplicación desarrollada en PHP-POO con patrón MVC.</p>
-	<a href="docs/Modelo_Vista_Controlador_v05.pdf" target="_blank"><img src='<?php echo URL_ROOT; ?>recursos/imagenes/Arquitectura_MVC.png' alt='Arquitectura_MVC.png' title="Representación del patrón MVC, por el profesor Jesús María de Quevedo Tomé"  height="400px" /></a>
-	<a href="http://dreamztech.com/blog/new-features-in-asp-net-mvc-4/" target="_blank"  title="Imagen de patrón MVC de http://dreamztech.com/blog/new-features-in-asp-net-mvc-4/"><img src="<?php echo URL_ROOT; ?>recursos/imagenes/MVC_imagen2.png" alt="MVC_imagen2.png"  height="400px" /></a>
+
+    <h3>1. Introducción </h3>
+    De la lectura de http://en.wikipedia.org/wiki/Create,_read,_update_and_delete <br/>
+    In Database applications, the acronym CRUD refers to all of the major functions that are <br/>
+    implemented inrelational database applications. Each letter in the acronym can map to a <br/>
+    standard SQL statement and HTTP method.<br/><br/><br/>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Operation</th>
+                <th>SQL</th>
+                <th>HTTP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Create</td>
+                <td>INSERT</td>
+                <td>PUT/POST</td>
+            </tr>
+            <tr>
+                <td>Read (Retrieve)</td>
+                <td>SELECT</td>
+                <td>GET</td>
+            </tr>
+            <tr>
+                <td>Update (Modif.)</td>
+                <td>UPDATE</td>
+                <td>PUT/PATCH</td>
+            </tr>
+            <tr>
+                <td>Delete (Destroy)</td>
+                <td>DELETE</td>
+                <td>DELETE</td>
+            </tr>
+        </tbody>
+    </table>  
+    <br/>
+    <br/>
+    Hasta ahora ya somos capaces de manejar todos los comandos SQL y también de enviar peticiones
+    HTTP al servidor utilizando comandos POST y GET. <br/><br/><br/>
+
+    <h3>2. Objetivo</h3>
+    Hacer el mantenimiento (altas, bajas, consultas y modificaciones de filas) de una tabla de datos<br/>
+    alojada en mysql con ayuda de una aplicación web escrita en php siguiendo el modelo vista controlador.  
+
+
 </div>
