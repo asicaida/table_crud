@@ -30,6 +30,9 @@
 		<script type='text/javascript' src="<?php echo URL_ROOT."recursos".DS."js".DS."general.js"; ?>" ></script>
 		<script type="text/javascript" src=""></script>
 		
+                <script type='text/javascript' src="<?php echo URL_ROOT."recursos/js/jquery/jquery-1.10.2.min.js"; ?>" ></script>
+                <script type='text/javascript' src="<?php echo URL_ROOT."recursos/js/general.js"; ?>" ></script>
+                
 		<script type="text/javascript" >
 			/* líneas del script */
 			function saludo() {

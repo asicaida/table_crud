@@ -26,7 +26,7 @@ class viajes extends \core\Controlador {
 	public function form_insertar(array $datos=array()) {
 		
 		$clausulas['order_by'] = " nombre ";
-		$datos['categorias'] = \modelos\Datos_SQL::table("viajes")->select($clausulas);
+		$datos['viajes'] = \modelos\Datos_SQL::table("viajes")->select($clausulas);
 		
 		$datos['view_content'] = \core\Vista::generar(__FUNCTION__, $datos);
 		$http_body = \core\Vista_Plantilla::generar('plantilla_principal', $datos);
@@ -86,10 +86,9 @@ class viajes extends \core\Controlador {
 				else {
 					$datos['values'] = $filas[0];
 					$datos['values']['precio'] = \core\Conversiones::decimal_punto_a_coma_y_miles($datos['values']['precio']);
-					$datos['values']['unidades_stock'] = \core\Conversiones::decimal_punto_a_coma_y_miles($datos['values']['unidades_stock']);
 					
 					$clausulas = array('order_by' => " nombre ");
-					$datos['categorias'] = \modelos\Datos_SQL::table("categorias")->select( $clausulas);
+					$datos['viajes'] = \modelos\Datos_SQL::table("viajes")->select( $clausulas);
 				}
 			}
 		}
@@ -104,9 +103,9 @@ class viajes extends \core\Controlador {
 		$validaciones=array(
 			 "id" => "errores_requerido && errores_numero_entero_positivo && errores_referencia:id/viajes/id"
 			, "nombre" =>"errores_requerido && errores_texto && errores_unicidad_modificar:id,nombre/viajes/nombre,id"
+                        , "apellidos" =>"errores_requerido && errores_texto && errores_unicidad_modificar:id,nombre/viajes/nombre,id"
 			, "precio" => "errores_precio"
-			, "unidades_stock" => "errores_precio"
-			, 'categoria_nombre' => 'errores_requerido && errores_referencia:categoria_nombre/categorias/nombre'
+			, "destino" => "errores_requerido"
 		);
 		if ( ! $validacion = ! \core\Validaciones::errores_validacion_request($validaciones, $datos)) {
 			//print_r($datos);
@@ -114,7 +113,8 @@ class viajes extends \core\Controlador {
 		}
 		else {
 			$datos['values']['precio'] = \core\Conversiones::decimal_coma_a_punto($datos['values']['precio']);
-			$datos['values']['unidades_stock'] = \core\Conversiones::decimal_coma_a_punto($datos['values']['unidades_stock']);
+			
+                       
 			if ( ! $validacion = \modelos\Datos_SQL::table("viajes")->update($datos["values"])) // Devuelve true o false
 				$datos["errores"]["errores_validacion"]="No se han podido grabar los datos en la bd.";
 		}
@@ -150,10 +150,9 @@ class viajes extends \core\Controlador {
 			}
 			else {
 				$datos['values'] = $filas[0];
-				$datos['values']['precio'] = \core\Conversiones::decimal_punto_a_coma_y_miles($datos['values']['precio']);
-				$datos['values']['unidades_stock'] = \core\Conversiones::decimal_punto_a_coma_y_miles($datos['values']['unidades_stock']);
+				$datos['values']['precio'] = \core\Conversiones::decimal_a_punto($datos['values']['precio']);
 				$clausulas = array('order_by' => " nombre ");
-				$datos['categorias'] = \modelos\Datos_SQL::select( $clausulas, 'categorias');
+				$datos['viajes'] = \modelos\Datos_SQL::select( $clausulas, 'viajes');
 			}
 		}
 		$datos['view_content'] = \core\Vista::generar(__FUNCTION__, $datos);

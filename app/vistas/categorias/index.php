@@ -25,9 +25,9 @@
 						<td>{$fila['nombre']}</td>
 						<td>{$fila['descripcion']}</td>
 						<td>
-					".\core\HTML_Tag::a_boton("boton", array("categorias", "form_modificar", $fila['id']), "modificar")
+					".\core\HTML_Tag::a_boton_onclick("boton", array("categorias", "form_modificar", $fila['id']), "modificar")
 //							<a class='boton' href='?menu={$datos['controlador_clase']}&submenu=form_modificar&id={$fila['id']}' >modificar</a>
-					.\core\HTML_Tag::a_boton("boton", array("categorias", "form_borrar", $fila['id']), "borrar").
+					.\core\HTML_Tag::a_boton_onclick("boton", array("categorias", "form_borrar", $fila['id']), "borrar").
 //							<a class='boton' href='?menu={$datos['controlador_clase']}&submenu=form_borrar&id={$fila['id']}' >borrar</a>
 						"</td>
 					</tr>

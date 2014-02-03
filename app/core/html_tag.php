@@ -169,10 +169,7 @@ class HTML_Tag extends \core\Clase_Base {
 	 * @return string
 	 */
 	public static function a_boton_onclick(
-			$clases,
-			array $query_string = array("inicio", "index"),
-			$texto,
-			array $otros_argumentos = array()
+                $clases,array $query_string = array("inicio", "index"),$texto,array $otros_argumentos = array()
 	) {
 		
 		self::$use_post_request_form = true;

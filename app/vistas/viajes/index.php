@@ -8,6 +8,8 @@
 				<th>apellidos</th>
 				<th>destino</th>
                                 <th>precio</th>
+                                <th>fecha_de_compra</th>
+                                <th>Acciones</th>
                                 
 			</tr>
 		</thead>
@@ -20,21 +22,22 @@
 						<td>{$fila['nombre']}</td>
 						<td>{$fila['apellidos']}</td>
                                                  <td>{$fila['destino']}</td>
-                                                <td>{$fila['precio']}</td>
-						<td>
-					".\core\HTML_Tag::a_boton("boton", array("viajes", "form_modificar", $fila['id']), "modificar")
+                                                <td>".\core\Conversiones::decimal_punto_a_coma($fila ['precio'])."</td>
+                                                <td>".\core\Conversiones::fecha_hora_mysql_a_es($fila ['fecha_de_compra'])."</td>
+                                                <td>
+                                                        ".\core\HTML_Tag::a_boton_onclick("boton", array("viajes", "form_modificar", $fila['id']),"modificar")."".
 //							<a class='boton' href='?menu={$datos['controlador_clase']}&submenu=form_modificar&id={$fila['id']}' >modificar</a>
-					.\core\HTML_Tag::a_boton("boton", array("viajes", "form_borrar", $fila['id']), "borrar").
+					\core\HTML_Tag::a_boton_onclick("boton", array("viajes", "form_borrar", $fila['id']),"borrar").
 //							<a class='boton' href='?menu={$datos['controlador_clase']}&submenu=form_borrar&id={$fila['id']}' >borrar</a>
-						"</td>
-					</tr>
+						"</td>                             
+                                           </tr>
 					";
 			}
 			echo "
 				<tr>
 					<td colspan='2'></td>
 						<td>"
-			.\core\HTML_Tag::a_boton("boton", array("viajes", "form_insertar"), "insertar").
+			.\core\HTML_Tag::a_boton_onclick("boton", array("viajes", "form_insertar"), "insertar").
 					"</td>
 				</tr>
 			";
