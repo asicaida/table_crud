@@ -150,7 +150,7 @@ class viajes extends \core\Controlador {
 			}
 			else {
 				$datos['values'] = $filas[0];
-				$datos['values']['precio'] = \core\Conversiones::decimal_a_punto($datos['values']['precio']);
+				$datos['values']['precio'] = \core\Conversiones::decimal_punto_a_coma($datos['values']['precio']);
 				$clausulas = array('order_by' => " nombre ");
 				$datos['viajes'] = \modelos\Datos_SQL::select( $clausulas, 'viajes');
 			}
