@@ -52,7 +52,7 @@ ul#menu {
 
 ul#menu li.item {
 	float: left;
-	border: 1px solid green;
+	border: 1px solid blue;
 	background-color: lightgreen;
 	padding: 5px;
 	margin: 0px 0px;
@@ -119,6 +119,7 @@ div#pie {
 table {
 	border: 3px solid black;
 	border-collapse: collapse;
+        background-color: #5E83BA !important;
 }
 
 table td, table th {
