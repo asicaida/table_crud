@@ -63,7 +63,7 @@
 		<div id="view_content">
 			<p><?php echo \core\Idioma::text("saludo2", "plantilla_internacional"); ?>
 				<button onclick="saludo();"><?php echo \core\Idioma::text("Saludo", "plantilla_internacional"); ?></button></p>
-			<a href="<?php echo \core\URL::generar_sin_idioma(); ?>docs/Modelo_Vista_Controlador_v05.pdf" target="_blank"><img src='<?php echo URL_ROOT; ?>recursos/imagenes/Arquitectura_MVC.png' alt='Arquitectura_MVC.png' title="Representación del patrón MVC, por el profesor Jesús María de Quevedo Tomé"  height="400px" /></a>
+			<a href="<?php echo \core\URL::generar_sin_idioma(); ?>docs/Modelo_Vista_Controlador_v05.pdf" target="_blank"><img src='<?php echo URL_ROOT; ?>recursos/imagenes/Arquitectura_MVC.png' alt='Arquitectura_MVC.png' title="Representación del patrón MVC, por el profesor "  height="400px" /></a>
 			<a href="http://dreamztech.com/blog/new-features-in-asp-net-mvc-4/" target="_blank"  title="Imagen de patrón MVC de http://dreamztech.com/blog/new-features-in-asp-net-mvc-4/"><img src="<?php echo URL_ROOT; ?>recursos/imagenes/MVC_imagen2.png" alt="MVC_imagen2.png"  height="400px" /></a>
 		</div>
 
@@ -71,7 +71,7 @@
 		<div id="pie">
 			<hr />
 		
-			<?php echo \core\Idioma::text("Autor", "plantilla_internacional"); ?>: Jesús María de Quevedo Tomé. <b><span title='jequeto@gmail.com'><?php echo \core\Idioma::text("Contactar", "plantilla_internacional"); ?>: <img src='<?php echo \core\URL::generar_sin_idioma(); ?>recursos/imagenes/generales/email.png' height='25px' /></span></b><br />
+			<?php echo \core\Idioma::text("Autor", "plantilla_internacional"); ?>: Dayana Asimbaya. <b><span title='dayana.sofia23@gmail.com'><?php echo \core\Idioma::text("Contactar", "plantilla_internacional"); ?>: <img src='<?php echo \core\URL::generar_sin_idioma(); ?>recursos/imagenes/generales/email.png' height='25px' /></span></b><br />
 			<?php echo \core\Idioma::text("Fecha última actualización", "plantilla_internacional"); ?>: 5/12/2013.
 		</div>
 		

@@ -7,8 +7,8 @@ namespace core;
 /**
  * Aplicación principal
  *
- * @author Jesús María de Quevedo Tomé <jequeto@gmail.com>
- * @since 20130130
+ * @author Dayana Asimbaya <dayana.sofia23@gmail.com>
+ *
  */
 class Aplicacion extends \core\Clase_Base {
 	

@@ -2,7 +2,7 @@
 namespace core;
 
 /**
- * @author Jesús María de Quevedo Tomé <jequeto@gmail.com>
+ * @author Dayana Asimbaya <dayana.sofia23@gmail.com>
  * @since 2013 12 02
  */
 class Rutas {
@@ -20,7 +20,7 @@ class Rutas {
 	 * también creará las entradas [menu], [submenu] e [id] asignándolas los 
 	 * valores datos1, dato2 y dato3 respectivamente.
 	 *
-	 * @author jequeto@gmail.com
+	 * @author Dayana Asimbaya <dayana.sofia23@gmail.com>
 	 * @since 125/11/2013
 	 */
 	public static function interpretar_url_amigable() {

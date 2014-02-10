@@ -6,7 +6,7 @@
 		<meta name="Keywords" content="palabras en castellano e ingles separadas por comas" /> 
 		<meta name="Generator" content="esmvcphp framewrok" /> 
 	 	<meta name="Origen" content="esmvcphp framework" /> 
-		<meta name="Author" content="Jesús María de Quevedo Tomé" /> 
+		<meta name="Author" content="Dayana Asimbaya" /> 
 		<meta name="Locality" content="Madrid, España" /> 
 		<meta name="Lang" content="<?php echo \core\Idioma::get(); ?>" /> 
 		<meta name="Viewport" content="maximum-scale=10.0" /> 

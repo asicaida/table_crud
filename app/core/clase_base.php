@@ -2,7 +2,7 @@
 namespace core;
 
 /**
- * @author Jesús María de Quevedo Tomé <jequeto@gmail.com>
+ * @author Dayana Asimbaya <dayana.sofia23@gmail.com>
  * @since 20130130
  */
 class Clase_Base extends \core\Distribuidor {

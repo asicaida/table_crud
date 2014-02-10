@@ -5,7 +5,7 @@ namespace core;
  * Conversiones de tipos de datos y de fechas
  * Como consideración básica debe suponerse que todos los datos que se 
  * 
- * @author Jesús María de Quevedo Tomé <jequeto@gmail.com>
+ * @author  Dayana Asimbaya <dayana.sofia23@gmail.com>
  * @since 20130130
  */
 class Conversiones {

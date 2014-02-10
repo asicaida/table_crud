@@ -4,7 +4,7 @@ namespace core;
 /**
  * Validaciones para contenidos de parámetros enviados por el cliente mediante POST o GET, que serán los contenidos de columnas que se van a insertar en la base de datos.
  * 
- * @author Jesús María de Quevedo Tomé <jequeto@gmail.com>
+ * @author Dayana Asimbaya <dayana.sofia23@gmail.com>
  * @since 20130130
  */
 class Validaciones  {

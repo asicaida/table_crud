@@ -3,7 +3,7 @@
 /*
 
 /*
-Recopilado por Jesús Mª de Quevedo Tomé
+Recopilado  PORDayana Asimbaya <dayana.sofia23@gmail.com>
 Created: Noviembre, 2010
 Updated: Decembre 2013
 
